@@ -14,14 +14,10 @@ function get_input()
 	if(keyboard_check(ord("Q"))or keyboard_check(vk_left)) 
 	{
 		left = 1;
-		//facing_left = true;
-		//facing_right = false;
 	}
 	if(keyboard_check(ord("D"))or keyboard_check(vk_right)) 
 	{
 		right = 1;
-		//facing_right = true;
-		//facing_left = false;
 	}
 	if(keyboard_check(ord("Z"))or keyboard_check(vk_up)) up = 1;
 	if(keyboard_check(ord("S"))or keyboard_check(vk_down)) down = 1;
@@ -41,16 +37,17 @@ function calc_movement()
 	{
 		if possede_arme = 0
 		
-		{sprite_index = spr_player_left_without_weapon93;}
+		{sprite_index = spr_player_right_without_weapon;}
 		
 		else
 		
-		{ sprite_index = spr_player_left;}
+		{ sprite_index = spr_player_right;}
 		
 		
 		facing_left = true;
 		facing_right = false;
-				
+			
+		image_xscale = -1
 	}
 	
 	
@@ -69,6 +66,7 @@ function calc_movement()
 		facing_right = true;
 		facing_left = false;
 		
+		image_xscale = 1
 		
 	}
 	//if(mouse_check_button_pressed(ev_left_press))
@@ -81,7 +79,7 @@ function calc_movement()
 		//if (facing_left == true) sprite_index = spr_player_left;
 		//if (facing_right == true) 
 		
-			if possede_arme = 0
+		if possede_arme = 0
 		
 		{sprite_index = spr_player_right_without_weapon;}
 		
@@ -89,7 +87,10 @@ function calc_movement()
 		
 		{ sprite_index = spr_player_right;}
 		
-	
+		if (facing_left == false)
+			{image_xscale = 1}
+		else
+			{image_xscale = -1}
 		
 	}
 	else if ( _vmove == 1 )
@@ -98,12 +99,16 @@ function calc_movement()
 		//if (facing_right == true) 
 		if possede_arme = 0
 		
-		{sprite_index = spr_player_left_without_weapon93;}
+		{sprite_index = spr_player_right_without_weapon;}
 		
 		else
 		
-		{ sprite_index = spr_player_left;}
+		{ sprite_index = spr_player_right;}
 	
+		if (facing_left == false)
+			{image_xscale = 1}
+		else
+			{image_xscale = -1}
 		
 	}
 	
@@ -121,6 +126,7 @@ function calc_movement()
 		x += _hmove;
 		y += _vmove;
 		global.shooting = false;
+		
 	}	
 	
 	
