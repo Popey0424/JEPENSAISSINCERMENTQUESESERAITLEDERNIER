@@ -20,7 +20,7 @@ if (obj_porte_puzzle.image_index == 0)
 	
 }
 
-if (obj_porte_puzzle.image_index == 10)
+if (obj_porte_puzzle.image_index == 8)
 {
 	obj_porte_puzzle.image_speed = 0
 }

@@ -3,14 +3,14 @@
 function scr_ejecter()
 {
 	
-	if (other.x <= x) 
+	if (other.x <= x-128) 
 	{
-		other.x = x - 266
+		other.x = x - 300
 	}
 	
-	else if (other.x > x+256)
+	else if (other.x >= x+128)
 	{
-		other.x = x + 640
+		other.x = x + 300
 	}
 
 	else if (other.y <= y-64)

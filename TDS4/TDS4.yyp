@@ -149,7 +149,6 @@
     {"id":{"name":"obj_machine_commandes","path":"objects/obj_machine_commandes/obj_machine_commandes.yy",},},
     {"id":{"name":"spr_button_credits","path":"sprites/spr_button_credits/spr_button_credits.yy",},},
     {"id":{"name":"obj_tuyau_mur_07","path":"objects/obj_tuyau_mur_07/obj_tuyau_mur_07.yy",},},
-    {"id":{"name":"spr_health_bar","path":"sprites/spr_health_bar/spr_health_bar.yy",},},
     {"id":{"name":"obj_pop_up","path":"objects/obj_pop_up/obj_pop_up.yy",},},
     {"id":{"name":"spr_blue_block","path":"sprites/spr_blue_block/spr_blue_block.yy",},},
     {"id":{"name":"obj_cuve","path":"objects/obj_cuve/obj_cuve.yy",},},

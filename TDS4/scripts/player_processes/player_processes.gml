@@ -87,10 +87,7 @@ function calc_movement()
 		
 		{ sprite_index = spr_player_right;}
 		
-		if (facing_left == false)
-			{image_xscale = 1}
-		else
-			{image_xscale = -1}
+		
 		
 	}
 	else if ( _vmove == 1 )
@@ -105,10 +102,6 @@ function calc_movement()
 		
 		{ sprite_index = spr_player_right;}
 	
-		if (facing_left == false)
-			{image_xscale = 1}
-		else
-			{image_xscale = -1}
 		
 	}
 	

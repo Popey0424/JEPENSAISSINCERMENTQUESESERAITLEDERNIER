@@ -2,8 +2,13 @@
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
     {"name":"obj_sol02","order":2,"path":"objects/obj_sol02/obj_sol02.yy",},
-    {"name":"obj_arme","order":1,"path":"objects/obj_arme/obj_arme.yy",},
+    {"name":"obj_trou_visu","order":1,"path":"objects/obj_trou_visu/obj_trou_visu.yy",},
+    {"name":"obj_trou01","order":2,"path":"objects/obj_trou01/obj_trou01.yy",},
+    {"name":"obj_zone_collision","order":3,"path":"objects/obj_zone_collision/obj_zone_collision.yy",},
+    {"name":"obj_trou_ennemies","order":4,"path":"objects/obj_trou_ennemies/obj_trou_ennemies.yy",},
+    {"name":"obj_arme","order":6,"path":"objects/obj_arme/obj_arme.yy",},
     {"name":"spr_arme","order":1,"path":"sprites/spr_arme/spr_arme.yy",},
     {"name":"obj_sol02121","order":3,"path":"objects/obj_sol02121/obj_sol02121.yy",},
+    {"name":"obj_projectil","order":5,"path":"objects/obj_projectil/obj_projectil.yy",},
   ],
 }
