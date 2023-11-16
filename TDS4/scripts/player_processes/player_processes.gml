@@ -141,7 +141,7 @@ function collision()
 		
 		repeat(_disx)
 		{
-			if(!place_meeting(x+sign(_tx-x), y, obj_Wall))
+			if(!place_meeting(x+sign(_tx-x), y, other))
 			{
 				x += sign(_tx-x);
 				 
@@ -150,32 +150,32 @@ function collision()
 		
 		repeat(_disy)
 		{
-			if(!place_meeting(x, y+sign(_ty-y), obj_Wall))
+			if(!place_meeting(x, y+sign(_ty-y), other))
 			{
 				y += sign(_ty-y);
 			}
 		}
 
-		if place_meeting(x, y, obj_Wall)
+		if place_meeting(x, y, other)
 		{
 				for( var i = 0; i < 1000; ++ i)
 			{
-				if (!place_meeting(x + i, y, obj_Wall))
+				if (!place_meeting(x + i, y, other))
 				{
 					x += i;
 					break;
 				}
-				if (!place_meeting(x - i, y, obj_Wall))
+				if (!place_meeting(x - i, y, other))
 				{
 					x -= i;
 					break;
 				}
-				if (!place_meeting(x, i + y, obj_Wall))
+				if (!place_meeting(x, i + y, other))
 				{
 					y += i;
 					break;
 				}
-				if (!place_meeting(x, i - y, obj_Wall))
+				if (!place_meeting(x, i - y, other))
 				{
 					y -= i;
 					break;
