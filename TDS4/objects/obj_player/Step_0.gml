@@ -208,8 +208,10 @@ if (hit_timer > 0) {
     image_blend = c_white; // Reset to normal color
 }
 
-if (global.shooting == true)
+if (global.shooting == true) and (possede_arme = 1)
 {
+	
+	
 	obj_player.sprite_index = spr_player_attack_right
 }
 
@@ -246,5 +248,17 @@ with obj_weapon
 {
 
 can_shoot = false;
+
+}
+
+//créer le viseur
+
+
+
+if possede_arme = 1
+
+{
+
+anim_arme = true;
 
 }

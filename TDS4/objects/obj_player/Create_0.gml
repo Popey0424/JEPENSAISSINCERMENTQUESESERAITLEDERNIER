@@ -4,8 +4,10 @@
 global.life = 0
 
 instance_create_layer(0, 0, "Instances_Obj_Weapon", obj_weapon);
-instance_create_layer(0, 0, "Instances_Character", obj_zone_collision);
-instance_create_layer(0, 0, "Instances_Obj_Weapon", obj_life);
+
+instance_create_layer(0, 0, "Instances_pop_up", obj_zone_collision);
+
+instance_create_layer(0, 0, "Instances_pop_up", obj_life);
 
 // Initialisation des variables
 global.score = 0
@@ -25,6 +27,8 @@ layer_enable_fx("Shake",false);
 flashAlpha = 0;
 //couleur 
 flashColour = c_white;
+
+
 
 
 
@@ -60,6 +64,8 @@ __dnd_lives += real(3);
 	f4 = 0;
 	
 	possede_arme = 0;
+	
+	anim_arme = false;
 	
 
 	

@@ -1,6 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
 
 
-//Réniatialise la caméra
 
+sprite_delete(spr_livre_ferme);
+
+
+instance_destroy(obj_stop_player);
+
+anim_arme = 0;

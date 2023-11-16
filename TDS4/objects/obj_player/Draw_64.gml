@@ -185,3 +185,19 @@ if (f4==1)
         draw_sprite(spr_livre_ferme, image_index,500,200);
 
         } }
+		
+		
+		// afficher anim récupération arme
+
+
+if (anim_arme = true)
+
+	{
+		draw_sprite(spr_livre_ferme, image_index,500,200);
+		instance_create_layer(x,y,"Instances_pop_up", obj_stop_player);
+		alarm_set(3,60);
+		
+		
+	}
+
+

@@ -2,8 +2,7 @@
 // You can write your code in this editor
 
 
-instance_destroy(obj_possede_arme);
 
-possede_arme = 1;
+frame = 0;
 
-
+instance_create_layer(x,y,"Instances_pop_up", obj_stop_player);
